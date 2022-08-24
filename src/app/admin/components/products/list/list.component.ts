@@ -41,15 +41,11 @@ export class ListComponent extends BaseComponent implements OnInit {
       position: Position.TopRight,
       
     }))
-    
-    
-    console.log(allProducts.products )
-    console.log("allProducts.products")
+  
     //@ts-ignore
     this.dataSource = new MatTableDataSource<List_Product>(allProducts);
     this.paginator.length = allProducts.totalCount;
-    console.log("ikinci sağlam")
-    console.log(this.dataSource.data)
+
   }
 
   async pageChanged() {
